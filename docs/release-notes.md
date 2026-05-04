@@ -1,43 +1,52 @@
 ---
 sidebar_label: 'Release notes'
-hide_title: 'true'
+title: JBoss Connector release notes
+description: "Version history and change details for the JBoss Connector, including new features, improvements, and bug fixes."
+tags:
+  - Reference
+  - System Administrator
+  - Automation Engineer
+  - Getting Started
 ---
 
-# JBoss Connector Release Notes
+# JBoss Connector release notes
 
-## Version 26.0.0
+## 26
 
-### 2026 January
+### 26.0.0
 
-#### New features
+2026 January
 
-#### Fixes
+### Fixes
 
-:white_check_mark: **CON-825**: Updated Jboss client libraries to latest versions and updated Java environment to Java 11.
-                   This changes the jmx protocol from remoting-jmx to http-remoting-jmx.
+:eight_spoked_asterisk: **CON-825**: Updated JBoss client libraries to the latest versions and updated the Java environment to Java 11. This changes the JMX protocol from remoting-jmx to http-remoting-jmx.
 
-## Version 19.0.0
+## 19
 
-### 2024 March
+### 19.0.0
 
-#### New features
+2024 March
 
-:white_check_mark: **Query**: Display the attribute value retrieved by a the query task.
+### What's new
 
-:white_check_mark: **Query**: Save the attribute value retrieved in an OpCon property.
+:eight_spoked_asterisk: **Query**: Display the attribute value retrieved by the query operation in the job log.
 
-:white_check_mark: **Update**: Update an attribute value associated with an mbean (attribute must be writable).
+:eight_spoked_asterisk: **Query**: Save the attribute value retrieved by the query operation in an OpCon property.
 
-:white_check_mark: **SubType**: Query tab includes new PropertyName text option.
+:eight_spoked_asterisk: **Update**: Update an attribute value associated with an mbean (the attribute must be writable).
 
-:white_check_mark: **SubType**: new Attribute Update tab for updating the value of an mbean attribute.
+:eight_spoked_asterisk: **SubType**: The Query tab now includes a **PropertyName** text option.
 
-#### Fixes
+:eight_spoked_asterisk: **SubType**: A new **Attribute Update** tab is available for updating the value of an mbean attribute.
 
-:white_check_mark: **Logging**: Changed logging removing log4j due to security vulnerability.
+### Fixes
 
-#### Release Notes
+:eight_spoked_asterisk: **Logging**: Changed logging implementation, removing log4j due to a security vulnerability.
 
-Installation has changed to a simple extract of the files instead of an installation program.
-Windows installation includes the java directory required for execution.
-Unix/Linux requires a Java 1.8 implementation. 
+### What's changed
+
+Installation changed to a simple file extraction instead of an installation program.
+
+The Windows installation now includes the Java directory required for execution.
+
+UNIX/Linux installations require a Java 1.8 runtime installed separately.

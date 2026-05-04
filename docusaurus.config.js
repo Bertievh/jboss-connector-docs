@@ -5,7 +5,11 @@ module.exports = {
   url: 'https://help.smatechnologies.com',
   baseUrl: '/opcon/connectors/jboss/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   organizationName: 'smatechnologies',
   projectName: 'jboss-connector-docs',
@@ -18,6 +22,11 @@ module.exports = {
         href: 'https://help.smatechnologies.com',
       },
     },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
+    },
     footer: {
       style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()} SMA Technologies.`,
@@ -28,7 +37,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          breadcrumbs: false,
+          breadcrumbs: true,
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
@@ -39,14 +48,13 @@ module.exports = {
         },
         gtag: {
           trackingID: 'G-7XYMFXX81Y',
-          anonymizeIP: false,
         },
       },
     ],
   ],
   plugins: [
 //    [
-//      require.resolve('@cmfcmf/docusaurus-search-local'), 
+//      require.resolve('@cmfcmf/docusaurus-search-local'),
 //      {
 //      }
 //    ],

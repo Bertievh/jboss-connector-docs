@@ -13,6 +13,14 @@ tags:
 
 ## 26
 
+### 26.2.0
+
+2026 May
+
+### Fixes
+
+:eight_spoked_asterisk: **CON-1327**: Corrected CVE-2020-36518 vulnerability.
+
 ### 26.0.0
 
 2026 January
